@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/spinnerTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/tablename"
+            android:layout_weight="1"/>
+
+        <Spinner
+            android:id="@+id/spinnerCommand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/commandName"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_id"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter ID element"/>
+
+    <Button
+        android:id="@+id/btn_command"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Perform the selected command"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter id for insert/update"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/et_id_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="id"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter name/albumId for insert/update"/>
+
+    <EditText
+        android:id="@+id/et_name_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="name/albumId"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter duration/release/songId for insert/update"/>
+
+    <EditText
+        android:id="@+id/et_3param_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="dur/release/songId"/>
+
+
+
+
+</LinearLayout>

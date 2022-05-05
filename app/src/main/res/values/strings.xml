@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SecondAppForContentPRoviderTestApp</string>
+
+    <string-array name="tablename">
+        <item>Album</item>
+        <item>Song</item>
+        <item>AlbumSong</item>
+    </string-array>
+
+    <string-array name="commandName">
+        <item>Query</item>
+        <item>Update</item>
+        <item>Insert</item>
+        <item>Delete</item>
+    </string-array>
+</resources>
